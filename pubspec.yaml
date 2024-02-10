@@ -18,6 +18,8 @@ dependencies:
   qr_code_scanner: ^1.0.1
   permission_handler: ^10.3.0
   http: any
+  encrypt: ^5.0.1
+  baseflow_plugin_template: ^2.1.2
 
 dev_dependencies:
   flutter_test:
