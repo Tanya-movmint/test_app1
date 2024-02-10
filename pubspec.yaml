@@ -20,6 +20,8 @@ dependencies:
   http: any
   encrypt: ^5.0.1
   baseflow_plugin_template: ^2.1.2
+  nfc_manager: ^3.3.0
+  nfc_in_flutter: ^1.0.0
 
 dev_dependencies:
   flutter_test:

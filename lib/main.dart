@@ -4,8 +4,10 @@ import 'package:provider/provider.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:test_app1/_encrypt.dart';
 import 'package:test_app1/_network.dart';
+import 'package:test_app1/_nfc.dart';
 import 'package:test_app1/_permission.dart';
 import 'package:test_app1/_qr_code.dart';
+
 
 
 
@@ -91,6 +93,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
       case 6:
         page = PermissionHandlerWidget();
+
+      case 7:
+        page = NFC();
       
       default:
         throw UnimplementedError('no widget for $selectedIndex');
@@ -133,6 +138,10 @@ class _MyHomePageState extends State<MyHomePage> {
                     NavigationRailDestination(
                       icon: Icon(Icons.analytics),
                       label: Text('Permission'),
+                    ),
+                    NavigationRailDestination(
+                      icon: Icon(Icons.nfc),
+                      label: Text('NFC'),
                     ),
                   ],
                   selectedIndex: selectedIndex,
