@@ -8,7 +8,7 @@ class Network extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text("GET Request"),
+          title: Text("HTTP GET Request"),
         ),
         floatingActionButton: FloatingActionButton(onPressed: () {
           fetchData();
