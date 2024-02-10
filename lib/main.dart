@@ -4,7 +4,9 @@ import 'package:provider/provider.dart';
 import 'package:qr_flutter/qr_flutter.dart';
 import 'package:test_app1/_encrypt.dart';
 import 'package:test_app1/_network.dart';
+import 'package:test_app1/_permission.dart';
 import 'package:test_app1/_qr_code.dart';
+
 
 
 
@@ -86,6 +88,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
       case 5:
         page = Encrypt();
+
+      case 6:
+        page = PermissionHandlerWidget();
       
       default:
         throw UnimplementedError('no widget for $selectedIndex');
@@ -123,7 +128,11 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                     NavigationRailDestination(
                       icon: Icon(Icons.enhanced_encryption),
-                      label: Text('Http'),
+                      label: Text('Encrypt'),
+                    ),
+                    NavigationRailDestination(
+                      icon: Icon(Icons.analytics),
+                      label: Text('Permission'),
                     ),
                   ],
                   selectedIndex: selectedIndex,
